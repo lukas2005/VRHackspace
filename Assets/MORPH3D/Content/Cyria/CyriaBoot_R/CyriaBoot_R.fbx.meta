@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: a98f76f6d0861e74caf2ab6f7b5bdb46
+timeCreated: 1485909088
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: abdomenLower
+    100002: //RootNode
+    100004: CyriaBootR_16444
+    100006: CyriaBootR_16444_LOD0
+    100008: CyriaBootR_16444_LOD1
+    100010: CyriaBootR_16444_LOD2
+    100012: CyriaBootR_16444_LOD3
+    100014: hip
+    100016: lThighBend
+    100018: pelvis
+    100020: rBigToe
+    100022: rFoot
+    100024: rHeel
+    100026: rMetatarsals
+    100028: rShin
+    100030: rSmallToe1
+    100032: rSmallToe2
+    100034: rSmallToe3
+    100036: rSmallToe4
+    100038: rThighBend
+    100040: rThighTwist
+    100042: rToe
+    400000: abdomenLower
+    400002: //RootNode
+    400004: CyriaBootR_16444
+    400006: CyriaBootR_16444_LOD0
+    400008: CyriaBootR_16444_LOD1
+    400010: CyriaBootR_16444_LOD2
+    400012: CyriaBootR_16444_LOD3
+    400014: hip
+    400016: lThighBend
+    400018: pelvis
+    400020: rBigToe
+    400022: rFoot
+    400024: rHeel
+    400026: rMetatarsals
+    400028: rShin
+    400030: rSmallToe1
+    400032: rSmallToe2
+    400034: rSmallToe3
+    400036: rSmallToe4
+    400038: rThighBend
+    400040: rThighTwist
+    400042: rToe
+    4300000: CyriaBootR_16444_LOD0
+    4300002: CyriaBootR_16444_LOD1
+    4300004: CyriaBootR_16444_LOD2
+    4300006: CyriaBootR_16444_LOD3
+    9500000: //RootNode
+    13700000: CyriaBootR_16444_LOD0
+    13700002: CyriaBootR_16444_LOD1
+    13700004: CyriaBootR_16444_LOD2
+    13700006: CyriaBootR_16444_LOD3
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

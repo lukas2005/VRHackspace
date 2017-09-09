@@ -1,0 +1,697 @@
+fileFormatVersion: 2
+guid: 3b5bd4f17f3ca0840a824eef37d6f783
+timeCreated: 1485172179
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: abdomenLower
+    100002: abdomenLower 1
+    100004: abdomenLower 2
+    100006: abdomenLower 3
+    100008: abdomenLower 4
+    100010: abdomenUpper
+    100012: abdomenUpper 1
+    100014: abdomenUpper 2
+    100016: abdomenUpper 3
+    100018: abdomenUpper 4
+    100020: chestLower
+    100022: chestLower 1
+    100024: chestLower 2
+    100026: chestLower 3
+    100028: chestLower 4
+    100030: chestUpper
+    100032: chestUpper 1
+    100034: chestUpper 2
+    100036: chestUpper 3
+    100038: chestUpper 4
+    100040: hip
+    100042: hip 1
+    100044: hip 2
+    100046: hip 3
+    100048: hip 4
+    100050: lCarpal1
+    100052: lCarpal1 1
+    100054: lCarpal1 2
+    100056: lCarpal1 3
+    100058: lCarpal1 4
+    100060: lCarpal2
+    100062: lCarpal2 1
+    100064: lCarpal2 2
+    100066: lCarpal2 3
+    100068: lCarpal2 4
+    100070: lCarpal3
+    100072: lCarpal3 1
+    100074: lCarpal3 2
+    100076: lCarpal3 3
+    100078: lCarpal3 4
+    100080: lCarpal4
+    100082: lCarpal4 1
+    100084: lCarpal4 2
+    100086: lCarpal4 3
+    100088: lCarpal4 4
+    100090: lCollar
+    100092: lCollar 1
+    100094: lCollar 2
+    100096: lCollar 3
+    100098: lCollar 4
+    100100: lForearmBend
+    100102: lForearmBend 1
+    100104: lForearmBend 2
+    100106: lForearmBend 3
+    100108: lForearmBend 4
+    100110: lForearmTwist
+    100112: lForearmTwist 1
+    100114: lForearmTwist 2
+    100116: lForearmTwist 3
+    100118: lForearmTwist 4
+    100120: lHand
+    100122: lHand 1
+    100124: lHand 2
+    100126: lHand 3
+    100128: lHand 4
+    100130: lIndex1
+    100132: lIndex1 1
+    100134: lIndex1 2
+    100136: lIndex1 3
+    100138: lIndex1 4
+    100140: lIndex2
+    100142: lIndex2 1
+    100144: lIndex2 2
+    100146: lIndex2 3
+    100148: lIndex2 4
+    100150: lIndex3
+    100152: lIndex3 1
+    100154: lIndex3 2
+    100156: lIndex3 3
+    100158: lIndex3 4
+    100160: lMid1
+    100162: lMid1 1
+    100164: lMid1 2
+    100166: lMid1 3
+    100168: lMid1 4
+    100170: lMid2
+    100172: lMid2 1
+    100174: lMid2 2
+    100176: lMid2 3
+    100178: lMid2 4
+    100180: lMid3
+    100182: lMid3 1
+    100184: lMid3 2
+    100186: lMid3 3
+    100188: lMid3 4
+    100190: lPectoral
+    100192: lPectoral 1
+    100194: lPectoral 2
+    100196: lPectoral 3
+    100198: lPectoral 4
+    100200: lPinky1
+    100202: lPinky1 1
+    100204: lPinky1 2
+    100206: lPinky1 3
+    100208: lPinky1 4
+    100210: lPinky2
+    100212: lPinky2 1
+    100214: lPinky2 2
+    100216: lPinky2 3
+    100218: lPinky2 4
+    100220: lPinky3
+    100222: lPinky3 1
+    100224: lPinky3 2
+    100226: lPinky3 3
+    100228: lPinky3 4
+    100230: lRing1
+    100232: lRing1 1
+    100234: lRing1 2
+    100236: lRing1 3
+    100238: lRing1 4
+    100240: lRing2
+    100242: lRing2 1
+    100244: lRing2 2
+    100246: lRing2 3
+    100248: lRing2 4
+    100250: lRing3
+    100252: lRing3 1
+    100254: lRing3 2
+    100256: lRing3 3
+    100258: lRing3 4
+    100260: lShldrBend
+    100262: lShldrBend 1
+    100264: lShldrBend 2
+    100266: lShldrBend 3
+    100268: lShldrBend 4
+    100270: lShldrTwist
+    100272: lShldrTwist 1
+    100274: lShldrTwist 2
+    100276: lShldrTwist 3
+    100278: lShldrTwist 4
+    100280: lThumb1
+    100282: lThumb1 1
+    100284: lThumb1 2
+    100286: lThumb1 3
+    100288: lThumb1 4
+    100290: lThumb2
+    100292: lThumb2 1
+    100294: lThumb2 2
+    100296: lThumb2 3
+    100298: lThumb2 4
+    100300: lThumb3
+    100302: lThumb3 1
+    100304: lThumb3 2
+    100306: lThumb3 3
+    100308: lThumb3 4
+    100310: M3DFemale
+    100312: //RootNode
+    100314: MechGirlGloves_9560_left
+    100316: MechGirlGloves_9560_left_LOD0
+    100318: MechGirlGloves_9560_left_LOD1
+    100320: MechGirlGloves_9560_left_LOD2
+    100322: MechGirlGloves_9560_left_LOD3
+    100324: MechGirlGloves_9560_left_LOD_0
+    100326: MechGirlGloves_9560_left_LOD_1
+    100328: MechGirlGloves_9560_left_LOD_2
+    100330: MechGirlGloves_9560_left_LOD_3
+    100332: neckLower
+    100334: neckLower 1
+    100336: neckLower 2
+    100338: neckLower 3
+    100340: neckLower 4
+    100342: pelvis
+    100344: pelvis 1
+    100346: pelvis 2
+    100348: pelvis 3
+    100350: pelvis 4
+    100352: rCarpal1
+    100354: rCarpal1 1
+    100356: rCarpal1 2
+    100358: rCarpal1 3
+    100360: rCarpal1 4
+    100362: rCarpal2
+    100364: rCarpal2 1
+    100366: rCarpal2 2
+    100368: rCarpal2 3
+    100370: rCarpal2 4
+    100372: rCarpal3
+    100374: rCarpal3 1
+    100376: rCarpal3 2
+    100378: rCarpal3 3
+    100380: rCarpal3 4
+    100382: rCarpal4
+    100384: rCarpal4 1
+    100386: rCarpal4 2
+    100388: rCarpal4 3
+    100390: rCarpal4 4
+    100392: rCollar
+    100394: rCollar 1
+    100396: rCollar 2
+    100398: rCollar 3
+    100400: rCollar 4
+    100402: rForearmBend
+    100404: rForearmBend 1
+    100406: rForearmBend 2
+    100408: rForearmBend 3
+    100410: rForearmBend 4
+    100412: rForearmTwist
+    100414: rForearmTwist 1
+    100416: rForearmTwist 2
+    100418: rForearmTwist 3
+    100420: rForearmTwist 4
+    100422: rHand
+    100424: rHand 1
+    100426: rHand 2
+    100428: rHand 3
+    100430: rHand 4
+    100432: rIndex1
+    100434: rIndex1 1
+    100436: rIndex1 2
+    100438: rIndex1 3
+    100440: rIndex1 4
+    100442: rIndex2
+    100444: rIndex2 1
+    100446: rIndex2 2
+    100448: rIndex2 3
+    100450: rIndex2 4
+    100452: rIndex3
+    100454: rIndex3 1
+    100456: rIndex3 2
+    100458: rIndex3 3
+    100460: rIndex3 4
+    100462: rMid1
+    100464: rMid1 1
+    100466: rMid1 2
+    100468: rMid1 3
+    100470: rMid1 4
+    100472: rMid2
+    100474: rMid2 1
+    100476: rMid2 2
+    100478: rMid2 3
+    100480: rMid2 4
+    100482: rMid3
+    100484: rMid3 1
+    100486: rMid3 2
+    100488: rMid3 3
+    100490: rMid3 4
+    100492: rPectoral
+    100494: rPectoral 1
+    100496: rPectoral 2
+    100498: rPectoral 3
+    100500: rPectoral 4
+    100502: rPinky1
+    100504: rPinky1 1
+    100506: rPinky1 2
+    100508: rPinky1 3
+    100510: rPinky1 4
+    100512: rPinky2
+    100514: rPinky2 1
+    100516: rPinky2 2
+    100518: rPinky2 3
+    100520: rPinky2 4
+    100522: rPinky3
+    100524: rPinky3 1
+    100526: rPinky3 2
+    100528: rPinky3 3
+    100530: rPinky3 4
+    100532: rRing1
+    100534: rRing1 1
+    100536: rRing1 2
+    100538: rRing1 3
+    100540: rRing1 4
+    100542: rRing2
+    100544: rRing2 1
+    100546: rRing2 2
+    100548: rRing2 3
+    100550: rRing2 4
+    100552: rRing3
+    100554: rRing3 1
+    100556: rRing3 2
+    100558: rRing3 3
+    100560: rRing3 4
+    100562: rShldrBend
+    100564: rShldrBend 1
+    100566: rShldrBend 2
+    100568: rShldrBend 3
+    100570: rShldrBend 4
+    100572: rShldrTwist
+    100574: rShldrTwist 1
+    100576: rShldrTwist 2
+    100578: rShldrTwist 3
+    100580: rShldrTwist 4
+    100582: rThumb1
+    100584: rThumb1 1
+    100586: rThumb1 2
+    100588: rThumb1 3
+    100590: rThumb1 4
+    100592: rThumb2
+    100594: rThumb2 1
+    100596: rThumb2 2
+    100598: rThumb2 3
+    100600: rThumb2 4
+    100602: rThumb3
+    100604: rThumb3 1
+    100606: rThumb3 2
+    100608: rThumb3 3
+    100610: rThumb3 4
+    400000: abdomenLower
+    400002: abdomenLower 1
+    400004: abdomenLower 2
+    400006: abdomenLower 3
+    400008: abdomenLower 4
+    400010: abdomenUpper
+    400012: abdomenUpper 1
+    400014: abdomenUpper 2
+    400016: abdomenUpper 3
+    400018: abdomenUpper 4
+    400020: chestLower
+    400022: chestLower 1
+    400024: chestLower 2
+    400026: chestLower 3
+    400028: chestLower 4
+    400030: chestUpper
+    400032: chestUpper 1
+    400034: chestUpper 2
+    400036: chestUpper 3
+    400038: chestUpper 4
+    400040: hip
+    400042: hip 1
+    400044: hip 2
+    400046: hip 3
+    400048: hip 4
+    400050: lCarpal1
+    400052: lCarpal1 1
+    400054: lCarpal1 2
+    400056: lCarpal1 3
+    400058: lCarpal1 4
+    400060: lCarpal2
+    400062: lCarpal2 1
+    400064: lCarpal2 2
+    400066: lCarpal2 3
+    400068: lCarpal2 4
+    400070: lCarpal3
+    400072: lCarpal3 1
+    400074: lCarpal3 2
+    400076: lCarpal3 3
+    400078: lCarpal3 4
+    400080: lCarpal4
+    400082: lCarpal4 1
+    400084: lCarpal4 2
+    400086: lCarpal4 3
+    400088: lCarpal4 4
+    400090: lCollar
+    400092: lCollar 1
+    400094: lCollar 2
+    400096: lCollar 3
+    400098: lCollar 4
+    400100: lForearmBend
+    400102: lForearmBend 1
+    400104: lForearmBend 2
+    400106: lForearmBend 3
+    400108: lForearmBend 4
+    400110: lForearmTwist
+    400112: lForearmTwist 1
+    400114: lForearmTwist 2
+    400116: lForearmTwist 3
+    400118: lForearmTwist 4
+    400120: lHand
+    400122: lHand 1
+    400124: lHand 2
+    400126: lHand 3
+    400128: lHand 4
+    400130: lIndex1
+    400132: lIndex1 1
+    400134: lIndex1 2
+    400136: lIndex1 3
+    400138: lIndex1 4
+    400140: lIndex2
+    400142: lIndex2 1
+    400144: lIndex2 2
+    400146: lIndex2 3
+    400148: lIndex2 4
+    400150: lIndex3
+    400152: lIndex3 1
+    400154: lIndex3 2
+    400156: lIndex3 3
+    400158: lIndex3 4
+    400160: lMid1
+    400162: lMid1 1
+    400164: lMid1 2
+    400166: lMid1 3
+    400168: lMid1 4
+    400170: lMid2
+    400172: lMid2 1
+    400174: lMid2 2
+    400176: lMid2 3
+    400178: lMid2 4
+    400180: lMid3
+    400182: lMid3 1
+    400184: lMid3 2
+    400186: lMid3 3
+    400188: lMid3 4
+    400190: lPectoral
+    400192: lPectoral 1
+    400194: lPectoral 2
+    400196: lPectoral 3
+    400198: lPectoral 4
+    400200: lPinky1
+    400202: lPinky1 1
+    400204: lPinky1 2
+    400206: lPinky1 3
+    400208: lPinky1 4
+    400210: lPinky2
+    400212: lPinky2 1
+    400214: lPinky2 2
+    400216: lPinky2 3
+    400218: lPinky2 4
+    400220: lPinky3
+    400222: lPinky3 1
+    400224: lPinky3 2
+    400226: lPinky3 3
+    400228: lPinky3 4
+    400230: lRing1
+    400232: lRing1 1
+    400234: lRing1 2
+    400236: lRing1 3
+    400238: lRing1 4
+    400240: lRing2
+    400242: lRing2 1
+    400244: lRing2 2
+    400246: lRing2 3
+    400248: lRing2 4
+    400250: lRing3
+    400252: lRing3 1
+    400254: lRing3 2
+    400256: lRing3 3
+    400258: lRing3 4
+    400260: lShldrBend
+    400262: lShldrBend 1
+    400264: lShldrBend 2
+    400266: lShldrBend 3
+    400268: lShldrBend 4
+    400270: lShldrTwist
+    400272: lShldrTwist 1
+    400274: lShldrTwist 2
+    400276: lShldrTwist 3
+    400278: lShldrTwist 4
+    400280: lThumb1
+    400282: lThumb1 1
+    400284: lThumb1 2
+    400286: lThumb1 3
+    400288: lThumb1 4
+    400290: lThumb2
+    400292: lThumb2 1
+    400294: lThumb2 2
+    400296: lThumb2 3
+    400298: lThumb2 4
+    400300: lThumb3
+    400302: lThumb3 1
+    400304: lThumb3 2
+    400306: lThumb3 3
+    400308: lThumb3 4
+    400310: M3DFemale
+    400312: //RootNode
+    400314: MechGirlGloves_9560_left
+    400316: MechGirlGloves_9560_left_LOD0
+    400318: MechGirlGloves_9560_left_LOD1
+    400320: MechGirlGloves_9560_left_LOD2
+    400322: MechGirlGloves_9560_left_LOD3
+    400324: MechGirlGloves_9560_left_LOD_0
+    400326: MechGirlGloves_9560_left_LOD_1
+    400328: MechGirlGloves_9560_left_LOD_2
+    400330: MechGirlGloves_9560_left_LOD_3
+    400332: neckLower
+    400334: neckLower 1
+    400336: neckLower 2
+    400338: neckLower 3
+    400340: neckLower 4
+    400342: pelvis
+    400344: pelvis 1
+    400346: pelvis 2
+    400348: pelvis 3
+    400350: pelvis 4
+    400352: rCarpal1
+    400354: rCarpal1 1
+    400356: rCarpal1 2
+    400358: rCarpal1 3
+    400360: rCarpal1 4
+    400362: rCarpal2
+    400364: rCarpal2 1
+    400366: rCarpal2 2
+    400368: rCarpal2 3
+    400370: rCarpal2 4
+    400372: rCarpal3
+    400374: rCarpal3 1
+    400376: rCarpal3 2
+    400378: rCarpal3 3
+    400380: rCarpal3 4
+    400382: rCarpal4
+    400384: rCarpal4 1
+    400386: rCarpal4 2
+    400388: rCarpal4 3
+    400390: rCarpal4 4
+    400392: rCollar
+    400394: rCollar 1
+    400396: rCollar 2
+    400398: rCollar 3
+    400400: rCollar 4
+    400402: rForearmBend
+    400404: rForearmBend 1
+    400406: rForearmBend 2
+    400408: rForearmBend 3
+    400410: rForearmBend 4
+    400412: rForearmTwist
+    400414: rForearmTwist 1
+    400416: rForearmTwist 2
+    400418: rForearmTwist 3
+    400420: rForearmTwist 4
+    400422: rHand
+    400424: rHand 1
+    400426: rHand 2
+    400428: rHand 3
+    400430: rHand 4
+    400432: rIndex1
+    400434: rIndex1 1
+    400436: rIndex1 2
+    400438: rIndex1 3
+    400440: rIndex1 4
+    400442: rIndex2
+    400444: rIndex2 1
+    400446: rIndex2 2
+    400448: rIndex2 3
+    400450: rIndex2 4
+    400452: rIndex3
+    400454: rIndex3 1
+    400456: rIndex3 2
+    400458: rIndex3 3
+    400460: rIndex3 4
+    400462: rMid1
+    400464: rMid1 1
+    400466: rMid1 2
+    400468: rMid1 3
+    400470: rMid1 4
+    400472: rMid2
+    400474: rMid2 1
+    400476: rMid2 2
+    400478: rMid2 3
+    400480: rMid2 4
+    400482: rMid3
+    400484: rMid3 1
+    400486: rMid3 2
+    400488: rMid3 3
+    400490: rMid3 4
+    400492: rPectoral
+    400494: rPectoral 1
+    400496: rPectoral 2
+    400498: rPectoral 3
+    400500: rPectoral 4
+    400502: rPinky1
+    400504: rPinky1 1
+    400506: rPinky1 2
+    400508: rPinky1 3
+    400510: rPinky1 4
+    400512: rPinky2
+    400514: rPinky2 1
+    400516: rPinky2 2
+    400518: rPinky2 3
+    400520: rPinky2 4
+    400522: rPinky3
+    400524: rPinky3 1
+    400526: rPinky3 2
+    400528: rPinky3 3
+    400530: rPinky3 4
+    400532: rRing1
+    400534: rRing1 1
+    400536: rRing1 2
+    400538: rRing1 3
+    400540: rRing1 4
+    400542: rRing2
+    400544: rRing2 1
+    400546: rRing2 2
+    400548: rRing2 3
+    400550: rRing2 4
+    400552: rRing3
+    400554: rRing3 1
+    400556: rRing3 2
+    400558: rRing3 3
+    400560: rRing3 4
+    400562: rShldrBend
+    400564: rShldrBend 1
+    400566: rShldrBend 2
+    400568: rShldrBend 3
+    400570: rShldrBend 4
+    400572: rShldrTwist
+    400574: rShldrTwist 1
+    400576: rShldrTwist 2
+    400578: rShldrTwist 3
+    400580: rShldrTwist 4
+    400582: rThumb1
+    400584: rThumb1 1
+    400586: rThumb1 2
+    400588: rThumb1 3
+    400590: rThumb1 4
+    400592: rThumb2
+    400594: rThumb2 1
+    400596: rThumb2 2
+    400598: rThumb2 3
+    400600: rThumb2 4
+    400602: rThumb3
+    400604: rThumb3 1
+    400606: rThumb3 2
+    400608: rThumb3 3
+    400610: rThumb3 4
+    4300000: MechGirlGloves_9560_left_LOD0
+    4300002: MechGirlGloves_9560_left_LOD1
+    4300004: MechGirlGloves_9560_left_LOD2
+    4300006: MechGirlGloves_9560_left_LOD3
+    9500000: //RootNode
+    13700000: MechGirlGloves_9560_left_LOD0
+    13700002: MechGirlGloves_9560_left_LOD1
+    13700004: MechGirlGloves_9560_left_LOD2
+    13700006: MechGirlGloves_9560_left_LOD3
+    20500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
