@@ -343,7 +343,7 @@ ReflectionProbe:
   m_Mode: 1
   m_RefreshMode: 0
   m_TimeSlicingMode: 0
-  m_Resolution: 256
+  m_Resolution: 512
   m_UpdateFrequency: 0
   m_BoxSize: {x: 69.71763, y: 11.39798, z: 79.89864}
   m_BoxOffset: {x: 17.510052, y: -0.69898987, z: 22.367535}
@@ -354,7 +354,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294966783
   m_IntensityMultiplier: 1
   m_BlendDistance: 1
   m_HDR: 1
@@ -374,7 +374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &13197104
 GameObject:
@@ -7962,13 +7962,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 559240827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01418fc3456f9954f81e6c8a05e1bf9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e6586190ab7eb644a5d8572b2cd249d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 1392531717}
-  SpawnPoints:
-  - {fileID: 1382717982}
-  AnimTestMode: 0
+  spawnSpots:
+  - {fileID: 1382717983}
 --- !u!114 &559240830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14650,7 +14649,7 @@ Transform:
   - {fileID: 1091389693}
   - {fileID: 1217076699}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052850559
 GameObject:
@@ -19219,7 +19218,7 @@ GameObject:
   - component: {fileID: 1382717983}
   m_Layer: 0
   m_Name: SpawnPoint
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19235,7 +19234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1385912992
 GameObject:
@@ -19282,8 +19281,8 @@ GameObject:
   - component: {fileID: 1392531718}
   - component: {fileID: 1392531723}
   m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
+  m_Name: Main Camera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19356,7 +19355,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1392531723
 MonoBehaviour:
