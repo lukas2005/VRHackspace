@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public static string VERSION = "0.0.1";
+    public string Version = "1.0.0";
 
-	// Use this for initialization
-	void Start () {
+    #region Singleton
+
+    public static GameManager instance;
+
+    void Awake() {
+        instance = this;
+    }
+
+    #endregion
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

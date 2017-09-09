@@ -9,7 +9,7 @@ public class NetworkManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        PhotonNetwork.ConnectUsingSettings(GameManager.VERSION);
+        PhotonNetwork.ConnectUsingSettings(GameManager.instance.Version);
 	}
 
     void OnJoinedLobby() {
