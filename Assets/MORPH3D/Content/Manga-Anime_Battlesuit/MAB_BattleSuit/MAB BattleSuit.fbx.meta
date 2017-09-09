@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 0ded2846d04670942891bf1f713b6071
+timeCreated: 1486662562
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: abdomenLower
+    100002: abdomenUpper
+    100004: BattlesuitG3_27422
+    100006: BattlesuitG3_27422_LOD0
+    100008: BattlesuitG3_27422_LOD1
+    100010: BattlesuitG3_27422_LOD2
+    100012: BattlesuitG3_27422_LOD3
+    100014: chestLower
+    100016: chestUpper
+    100018: head
+    100020: hip
+    100022: lCarpal1
+    100024: lCarpal2
+    100026: lCarpal3
+    100028: lCarpal4
+    100030: lCollar
+    100032: lEar
+    100034: lFoot
+    100036: lForearmBend
+    100038: lForearmTwist
+    100040: lHand
+    100042: lHeel
+    100044: lMetatarsals
+    100046: lowerJaw
+    100048: lPectoral
+    100050: lShin
+    100052: lShldrBend
+    100054: lShldrTwist
+    100056: lThighBend
+    100058: lThighTwist
+    100060: lThumb1
+    100062: //RootNode
+    100064: neckLower
+    100066: neckUpper
+    100068: pelvis
+    100070: rCarpal1
+    100072: rCarpal2
+    100074: rCarpal3
+    100076: rCarpal4
+    100078: rCollar
+    100080: rEar
+    100082: rFoot
+    100084: rForearmBend
+    100086: rForearmTwist
+    100088: rHand
+    100090: rHeel
+    100092: rMetatarsals
+    100094: rPectoral
+    100096: rShin
+    100098: rShldrBend
+    100100: rShldrTwist
+    100102: rThighBend
+    100104: rThighTwist
+    100106: rThumb1
+    400000: abdomenLower
+    400002: abdomenUpper
+    400004: BattlesuitG3_27422
+    400006: BattlesuitG3_27422_LOD0
+    400008: BattlesuitG3_27422_LOD1
+    400010: BattlesuitG3_27422_LOD2
+    400012: BattlesuitG3_27422_LOD3
+    400014: chestLower
+    400016: chestUpper
+    400018: head
+    400020: hip
+    400022: lCarpal1
+    400024: lCarpal2
+    400026: lCarpal3
+    400028: lCarpal4
+    400030: lCollar
+    400032: lEar
+    400034: lFoot
+    400036: lForearmBend
+    400038: lForearmTwist
+    400040: lHand
+    400042: lHeel
+    400044: lMetatarsals
+    400046: lowerJaw
+    400048: lPectoral
+    400050: lShin
+    400052: lShldrBend
+    400054: lShldrTwist
+    400056: lThighBend
+    400058: lThighTwist
+    400060: lThumb1
+    400062: //RootNode
+    400064: neckLower
+    400066: neckUpper
+    400068: pelvis
+    400070: rCarpal1
+    400072: rCarpal2
+    400074: rCarpal3
+    400076: rCarpal4
+    400078: rCollar
+    400080: rEar
+    400082: rFoot
+    400084: rForearmBend
+    400086: rForearmTwist
+    400088: rHand
+    400090: rHeel
+    400092: rMetatarsals
+    400094: rPectoral
+    400096: rShin
+    400098: rShldrBend
+    400100: rShldrTwist
+    400102: rThighBend
+    400104: rThighTwist
+    400106: rThumb1
+    4300000: BattlesuitG3_27422_LOD0
+    4300002: BattlesuitG3_27422_LOD1
+    4300004: BattlesuitG3_27422_LOD2
+    4300006: BattlesuitG3_27422_LOD3
+    9500000: //RootNode
+    13700000: BattlesuitG3_27422_LOD0
+    13700002: BattlesuitG3_27422_LOD1
+    13700004: BattlesuitG3_27422_LOD2
+    13700006: BattlesuitG3_27422_LOD3
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

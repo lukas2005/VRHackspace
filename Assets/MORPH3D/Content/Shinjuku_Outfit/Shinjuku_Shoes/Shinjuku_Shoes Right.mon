@@ -1,0 +1,383 @@
+{
+  "schematics": [
+    {
+      "origin_and_description": {
+        "mcs_id": "f087939c-5ab0-491a-a026-cfb77b4f0015",
+        "name": "Shinjuku_Shoes_Right",
+        "vendor_id": "2e4ddbf3-b4fd-11e6-ab9c-000f1f047949",
+        "vendor_name": "MORPH3D",
+        "collection_id": null,
+        "collection_name": "Shinjuku_Outfit",
+        "parent_id": null,
+        "child_count": 0,
+        "gender": 0,
+        "category": 0,
+        "tags": null,
+        "description": null
+      },
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "Shinjuku_Shoes Right",
+        "generated_path": null
+      },
+      "version_and_control": {
+        "mcs_version": 1.6,
+        "mcs_revision": 0.0,
+        "collection_version": 0.0,
+        "item_version": 1.0,
+        "compatibilities": [
+          "Genesis 2 Female"
+        ]
+      },
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": null,
+          "alpha_masks": [
+          ],
+          "alpha_masks_key": [
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 2,
+        "artisttools_function": 1,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "Shinjuku_Shoes Right/Shinjuku_Shoes_6472_right_LOD_0/Shinjuku_Shoes_6472_right_LOD0",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "87d20afe-5e8b-49dc-bed5-c9e366b09598"
+          ],
+          "alpha_masks": [
+          ],
+          "alpha_masks_key": [
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "Shinjuku_Shoes Right/Shinjuku_Shoes_6472_right_LOD_1/Shinjuku_Shoes_6472_right_LOD1",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "ed8edc04-2025-42e8-b18e-3356ee092841"
+          ],
+          "alpha_masks": [
+          ],
+          "alpha_masks_key": [
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "Shinjuku_Shoes Right/Shinjuku_Shoes_6472_right_LOD_2/Shinjuku_Shoes_6472_right_LOD2",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "d0b1257c-3044-40fb-8a8d-dc128f6f3bac"
+          ],
+          "alpha_masks": [
+          ],
+          "alpha_masks_key": [
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "Shinjuku_Shoes Right/Shinjuku_Shoes_6472_right_LOD_3/Shinjuku_Shoes_6472_right_LOD3",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "5cffe294-bc3e-4653-acd7-a26393591776"
+          ],
+          "alpha_masks": [
+          ],
+          "alpha_masks_key": [
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    }
+  ]
+}
