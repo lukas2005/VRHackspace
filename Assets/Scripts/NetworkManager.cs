@@ -1,32 +1,53 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using lukas2005.VRHackspace;
 using UnityEngine;
 
 public class NetworkManager : MonoBehaviour {
 
-    public GameObject MainCamera;
-    public Transform[] spawnSpots;
+    #region Singleton
 
-	// Use this for initialization
-	void Start () {
+    public static NetworkManager instance;
+
+    void Awake()
+    {
+        instance = this;
+        DontDestroyOnLoad(this);
+    }
+
+    #endregion
+
+    SceneManager scenemngr;
+
+    // Use this for initialization
+    void Start() {
+        scenemngr = SceneManager.currentSceneManager;
         PhotonNetwork.ConnectUsingSettings(GameManager.instance.Version);
-	}
+    }
 
     void OnJoinedLobby() {
 
-        RoomOptions opts = new RoomOptions();
-        opts.MaxPlayers = 0;
+        RoomOptions opts = new RoomOptions
+        {
+            MaxPlayers = 0
+        };
 
         PhotonNetwork.JoinOrCreateRoom("#", opts, PhotonNetwork.lobby);
 
     }
 
     void OnJoinedRoom() {
+    }
 
-        Transform spawnSpot = spawnSpots[Random.Range(0, spawnSpots.Length)];
+    public GameObject SpawnPlayer() {
 
-        GameObject myPlayer = PhotonNetwork.Instantiate("Player", spawnSpot.position, spawnSpot.rotation, 0);
-        MainCamera.SetActive(false);
+        if (scenemngr == null || scenemngr.type == SceneType.NoSpawn)
+        {
+            Debug.LogWarning("We are in a wrong scene!");
+            return null;
+        }
+
+        Transform spawnPoint = scenemngr.SpawnPoints[Random.Range(0, scenemngr.SpawnPoints.Length)];
+
+        GameObject myPlayer = PhotonNetwork.Instantiate("Player", spawnPoint.position, spawnPoint.rotation, 0);
 
         myPlayer.GetComponent<PlayerContoller>().enabled = true;
         myPlayer.GetComponent<MyMouseLook>().enabled = true;
@@ -36,6 +57,7 @@ public class NetworkManager : MonoBehaviour {
         myPlayer.GetComponent<PhotonVoiceSpeaker>().enabled = false;
         myPlayer.GetComponent<PhotonVoiceRecorder>().enabled = true;
 
+        return myPlayer;
     }
 
 }
