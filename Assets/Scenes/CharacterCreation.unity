@@ -3273,6 +3273,51 @@ MonoBehaviour:
     - Array:
       - {fileID: 1391419624964480, guid: 3aa800d94008302469ff0a042fa4a4b0, type: 2}
       - {fileID: 2800000, guid: 882621da86fa08442ba3b6baa0687c6d, type: 3}
+    - Array:
+      - {fileID: 1800473132355742, guid: 7eca505c5e6b68547b346d25d8293c12, type: 2}
+      - {fileID: 2800000, guid: f1d1df25f6800b54fa7ec5cb5f60708d, type: 3}
+    - Array:
+      - {fileID: 1520040480948640, guid: 1761746c3ecff3840b02f34f8dae7f3d, type: 2}
+      - {fileID: 2800000, guid: b9e3908766fa9884d84fabcfee3b9553, type: 3}
+    - Array:
+      - {fileID: 1239186199531346, guid: 197618c43404b0d42906685ffecae43b, type: 2}
+      - {fileID: 2800000, guid: e1eee3af08fcdc04ba02be43b4bdaed6, type: 3}
+    - Array:
+      - {fileID: 1985345563069288, guid: 343f67dcda21cd645bbc4514848c8bb0, type: 2}
+      - {fileID: 2800000, guid: 53290742c6cc6604da3a07639e045a8d, type: 3}
+    - Array:
+      - {fileID: 1639274132696376, guid: 3319b07d4975b8548abf950e8756e3a1, type: 2}
+      - {fileID: 2800000, guid: 346fa3d2845aa6041bb29058a501c51f, type: 3}
+    - Array:
+      - {fileID: 1764062579708504, guid: 46adc9bb2dd9e2c43a7a13ba7c48f632, type: 2}
+      - {fileID: 2800000, guid: 8e0d3bc6288c7a542bbbc8a0afda879c, type: 3}
+    - Array:
+      - {fileID: 1985519543045624, guid: 67c9cf12b2d04044291b960fa5a6d4c7, type: 2}
+      - {fileID: 2800000, guid: 81ac351e341ae264e9c0f189d1e7133a, type: 3}
+    - Array:
+      - {fileID: 1529009424809846, guid: 0724cac04851b45458208460c1c1fb51, type: 2}
+      - {fileID: 2800000, guid: 516daa8f88a6f5d4fbbca76c8c3439bf, type: 3}
+    - Array:
+      - {fileID: 1191599711182168, guid: 2e86b2d662ba3734a87f97d9545f9f11, type: 2}
+      - {fileID: 2800000, guid: 140be6885c7951d4fb05ce225c47bc98, type: 3}
+    - Array:
+      - {fileID: 1548934532620422, guid: f1e921569e68dce47b26e0351149325c, type: 2}
+      - {fileID: 2800000, guid: 2bf8b509276a1154aae497bf1d34853b, type: 3}
+    - Array:
+      - {fileID: 1858642671359142, guid: 6fd424a61b879ac4e99a8cb03ae87f42, type: 2}
+      - {fileID: 2800000, guid: b730b7d8f8e23884dabddb07b7a3fd0f, type: 3}
+    - Array:
+      - {fileID: 1137858062623862, guid: d82982d49dff47345a60752cca565c33, type: 2}
+      - {fileID: 2800000, guid: 52b5ba8608ee2c341ae575d014b72c47, type: 3}
+    - Array:
+      - {fileID: 1767275865345704, guid: 42a1183058c24a2458cf20b3406bfa24, type: 2}
+      - {fileID: 2800000, guid: ecc27b42773974c45b4bbee7f0a0ba4c, type: 3}
+    - Array:
+      - {fileID: 1970455554356036, guid: 7fb442dd2d4131643a6a8cf779dff5e7, type: 2}
+      - {fileID: 2800000, guid: 170aa38492fccfc46afc1660ae863559, type: 3}
+    - Array:
+      - {fileID: 1252370635538828, guid: 5a71764294424b54780dc39354a9c535, type: 2}
+      - {fileID: 2800000, guid: 563d61cc8c90116499dc390c8ed2606a, type: 3}
   clothesDisplay: {fileID: 1554361038}
   CCItemPrefab: {fileID: 1205434684655782, guid: b8df8c92eb9c8dd43ab356af68ce8e0b,
     type: 2}
