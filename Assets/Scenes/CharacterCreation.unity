@@ -3256,23 +3256,23 @@ MonoBehaviour:
       - {fileID: 1178162192180184, guid: b9f392f3abe191b4ab706b142f355e2f, type: 2}
       - {fileID: 2800000, guid: 9d86ff59cc0432344af5e3616279bf5e, type: 3}
     - Array:
-      - {fileID: 1178162192180184, guid: b9f392f3abe191b4ab706b142f355e2f, type: 2}
-      - {fileID: 2800000, guid: 9d86ff59cc0432344af5e3616279bf5e, type: 3}
+      - {fileID: 1608299654241052, guid: a0a47898220ac48418e06b389f460398, type: 2}
+      - {fileID: 2800000, guid: 6e0416ac69df11c47b0a8a579bacef45, type: 3}
     - Array:
-      - {fileID: 1178162192180184, guid: b9f392f3abe191b4ab706b142f355e2f, type: 2}
-      - {fileID: 2800000, guid: 9d86ff59cc0432344af5e3616279bf5e, type: 3}
+      - {fileID: 1708231534369686, guid: 743a97eb284296745b6a4daf9a3a8230, type: 2}
+      - {fileID: 2800000, guid: 169b96d18c908d341ab5b1417d720f39, type: 3}
     - Array:
-      - {fileID: 1178162192180184, guid: b9f392f3abe191b4ab706b142f355e2f, type: 2}
-      - {fileID: 2800000, guid: 9d86ff59cc0432344af5e3616279bf5e, type: 3}
+      - {fileID: 1316663941116472, guid: 2fe3acc5004922a40badcf0bfdc08d49, type: 2}
+      - {fileID: 2800000, guid: ce123cf66527860419fd21cfe3a81d34, type: 3}
     - Array:
-      - {fileID: 1178162192180184, guid: b9f392f3abe191b4ab706b142f355e2f, type: 2}
-      - {fileID: 2800000, guid: 9d86ff59cc0432344af5e3616279bf5e, type: 3}
+      - {fileID: 165726, guid: 9c76f09b8e2d2754196d1139875480de, type: 2}
+      - {fileID: 2800000, guid: 102718d2ec0aa00458a6ec531a9d6d9d, type: 3}
     - Array:
-      - {fileID: 1178162192180184, guid: b9f392f3abe191b4ab706b142f355e2f, type: 2}
-      - {fileID: 2800000, guid: 9d86ff59cc0432344af5e3616279bf5e, type: 3}
+      - {fileID: 1727861677250122, guid: 02c54127ac07789448b619ed528cad76, type: 2}
+      - {fileID: 2800000, guid: 0ea30d46b76bde547aeea30182374675, type: 3}
     - Array:
-      - {fileID: 1178162192180184, guid: b9f392f3abe191b4ab706b142f355e2f, type: 2}
-      - {fileID: 2800000, guid: 9d86ff59cc0432344af5e3616279bf5e, type: 3}
+      - {fileID: 1391419624964480, guid: 3aa800d94008302469ff0a042fa4a4b0, type: 2}
+      - {fileID: 2800000, guid: 882621da86fa08442ba3b6baa0687c6d, type: 3}
   clothesDisplay: {fileID: 1554361038}
   CCItemPrefab: {fileID: 1205434684655782, guid: b8df8c92eb9c8dd43ab356af68ce8e0b,
     type: 2}
