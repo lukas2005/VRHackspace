@@ -1,0 +1,393 @@
+{
+  "schematics": [
+    {
+      "origin_and_description": {
+        "mcs_id": "52a648ba-90df-47ae-8d03-bb82778fe302",
+        "name": "EWBoots_Left",
+        "vendor_id": "2e4ddbf3-b4fd-11e6-ab9c-000f1f047949",
+        "vendor_name": "MORPH3D",
+        "collection_id": null,
+        "collection_name": "Wood_Elf_Scout",
+        "parent_id": null,
+        "child_count": 0,
+        "gender": 0,
+        "category": 0,
+        "tags": null,
+        "description": null
+      },
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "EWBoots Left",
+        "generated_path": null
+      },
+      "version_and_control": {
+        "mcs_version": 1.6,
+        "mcs_revision": 0.0,
+        "collection_version": 0.0,
+        "item_version": 1.0,
+        "compatibilities": [
+          "Genesis 2 Male"
+        ]
+      },
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": null,
+          "alpha_masks": [
+            "./AlphaInjection/M3DMale_LOD0-EWBoots_left_LOD0-Body_LOD0-occlusion.png"
+          ],
+          "alpha_masks_key": [
+            "BODY"
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 2,
+        "artisttools_function": 1,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "EWBoots Left/EWBoots_left_LOD_0/EWBoots_left_LOD0",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "20899eaf-a2dc-4195-9892-f51c5d9bc97e"
+          ],
+          "alpha_masks": [
+            "./AlphaInjection/M3DMale_LOD0-EWBoots_left_LOD0-Body_LOD0-occlusion.png"
+          ],
+          "alpha_masks_key": [
+            "BODY"
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "EWBoots Left/EWBoots_left_LOD_1/EWBoots_left_LOD1",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "c833f28e-d8b3-4b9d-9fbb-257d115ca539"
+          ],
+          "alpha_masks": [
+            "./AlphaInjection/M3DMale_LOD1-EWBoots_left_LOD1-Body_LOD1-occlusion.png"
+          ],
+          "alpha_masks_key": [
+            "BODY"
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "EWBoots Left/EWBoots_left_LOD_2/EWBoots_left_LOD2",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "ca1c0721-9ff9-476d-90fb-c7c86b654220"
+          ],
+          "alpha_masks": [
+            "./AlphaInjection/M3DMale_LOD2-EWBoots_left_LOD2-Body_LOD2-occlusion.png"
+          ],
+          "alpha_masks_key": [
+            "BODY"
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    },
+    {
+      "origin_and_description": null,
+      "stream_and_path": {
+        "image_thumbnail": null,
+        "interactive_thumbnail": null,
+        "url": null,
+        "root_path": null,
+        "source_path": "EWBoots Left/EWBoots_left_LOD_3/EWBoots_left_LOD3",
+        "generated_path": null
+      },
+      "version_and_control": null,
+      "structure_and_physics": {
+        "item_structure": {
+          "lods": null,
+          "persistent": null,
+          "cap": null,
+          "assigned_materials": [
+            "04c196cd-517e-409f-9736-795ce771bed9"
+          ],
+          "alpha_masks": [
+            "./AlphaInjection/M3DMale_LOD3-EWBoots_left_LOD3-Body_LOD3-occlusion.png"
+          ],
+          "alpha_masks_key": [
+            "BODY"
+          ],
+          "morph_resouces": null
+        },
+        "material_structure": {
+          "shader": null,
+          "albedo": null,
+          "albedo_tint": null,
+          "metal": null,
+          "specular": null,
+          "smoothness_channel": null,
+          "smoothness_value": 0.0,
+          "normal": null,
+          "normal_value": 0.0,
+          "detail_normal": null,
+          "detail_normal_value": 0.0,
+          "height": null,
+          "transparency": null,
+          "transparency_mode": null,
+          "transparency_value": 0.0,
+          "emission": null,
+          "emission_value": null,
+          "emission_color": null,
+          "global_illumination": null,
+          "detail": null,
+          "tile_x": 0.0,
+          "tile_y": 0.0,
+          "offset_x": 0.0,
+          "offset_y": 0.0,
+          "tint": null,
+          "shader_keywords": null,
+          "shader_tags": null,
+          "shader_properties": null,
+          "render_queue": -2,
+          "textures": null
+        },
+        "morph_structure": {
+          "lodMorphObjectNames": null,
+          "lodMorphLocations": null
+        }
+      },
+      "type_and_function": {
+        "primary_function": 0,
+        "hierarchy_rank": 3,
+        "artisttools_function": 3,
+        "item_function": 4,
+        "material_function": 0,
+        "morph_function": 0,
+        "animation_function": 0
+      }
+    }
+  ]
+}
