@@ -184,6 +184,7 @@ MonoBehaviour:
   texture: {fileID: 0}
   Mark: {fileID: 114690434997876600}
   image: {fileID: 114243478377695732}
+  isDefault: 0
 --- !u!114 &114690434997876600
 MonoBehaviour:
   m_ObjectHideFlags: 1
