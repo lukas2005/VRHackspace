@@ -9,11 +9,15 @@ public class CharacterCreationSystem : MonoBehaviour {
 
     public Gender gender;
     public GameObject[] prefabs;
+
     public ThreeDArray[] clothes;
     public RectTransform clothesDisplay;
+
     public ThreeDArray[] hair;
     public RectTransform hairDisplay;
+
     public GameObject CCItemPrefab;
+    public GameObject CCHairPrefab;
 
     [HideInInspector]
     public M3DCharacterManager character;
@@ -39,22 +43,22 @@ public class CharacterCreationSystem : MonoBehaviour {
         character = Instantiate(prefabs[(int)gender], Vector3.zero, new Quaternion(0, 180, 0, 0)).GetComponent<M3DCharacterManager>();
         character.ForceJawShut = true;
 
-        displayClothes();
+        DisplayClothes();
 
-        displayHair();
+        DisplayHair();
     }
 
-    public void genderChanged() {
+    public void GenderChanged() {
         gender = (Gender)genderDropdown.value;
         GameObject obj = Instantiate(prefabs[(int)gender], Vector3.zero, new Quaternion(0, 180, 0, 0));
 
         CharacterCreationSystemGUI.instance.Tabs[1].SetActive(true);
 
-        displayClothes();
+        DisplayClothes();
 
         CharacterCreationSystemGUI.instance.Tabs[2].SetActive(true);
 
-        displayHair();
+        DisplayHair();
 
         M3DCharacterManager objChar = obj.GetComponent<M3DCharacterManager>();
 
@@ -66,18 +70,18 @@ public class CharacterCreationSystem : MonoBehaviour {
         character.ForceJawShut = true;
     }
 
-    public void fatnessChanged()
+    public void FatnessChanged()
     {
         character.SetBlendshapeValueAsync("FBMHeavy", fatnessSlider.value);
     }
 
-    public void fitnessChanged()
+    public void FitnessChanged()
     {
         character.SetBlendshapeValueAsync("FBMBodybuilderDetails", fitnessSlider.value);
         character.SetBlendshapeValueAsync("FBMBodybuilderSize", fitnessSlider.value);
     }
 
-    void displayHair()
+    void DisplayHair()
     {
 
         if (hairDisplay.childCount > 0)
@@ -98,14 +102,20 @@ public class CharacterCreationSystem : MonoBehaviour {
         {
             Object[] hairs = ttd.Array;
 
-            CCItemScript itemScript = Instantiate(CCItemPrefab, hairDisplay).GetComponent<CCItemScript>();
-            itemScript.prefab = (GameObject)hairs[0];
-            itemScript.texture = (Texture2D)hairs[1];
+            CCHairScript hairScript = Instantiate(CCHairPrefab, hairDisplay).GetComponent<CCHairScript>();
+            hairScript.prefab = (GameObject)hairs[0];
+            hairScript.texture = (Texture2D)hairs[1];
+
+            //Object[] tmp = (Object[])hairs.Clone();
+
+            for (int i = 2; i < hairs.Length; i++) {
+                hairScript.colors.Add((Material)hairs[i]);
+            }
         }
 
     }
 
-    void displayClothes() {
+    void DisplayClothes() {
 
         if (clothesDisplay.childCount > 0) {
 

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224954971181283882}
   - component: {fileID: 222861242418289624}
-  - component: {fileID: 114450956299958502}
+  - component: {fileID: 114387864220371140}
   - component: {fileID: 114296992709533632}
   - component: {fileID: 114199701955999868}
   m_Layer: 5
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114450956299958502}
+      - m_Target: {fileID: 114387864220371140}
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114450956299958502
+--- !u!114 &114387864220371140
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -184,7 +184,6 @@ MonoBehaviour:
   texture: {fileID: 0}
   Mark: {fileID: 114690434997876600}
   image: {fileID: 114243478377695732}
-  isDefault: 0
 --- !u!114 &114690434997876600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,7 +272,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1205434684655782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.0896719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224344222257363178}
@@ -283,6 +282,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 4.5606384, y: -3.5004797}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

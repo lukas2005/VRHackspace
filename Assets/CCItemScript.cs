@@ -14,18 +14,13 @@ public class CCItemScript : MonoBehaviour {
     public Image Mark;
     public RawImage image;
 
-    public bool isDefault = false;
-
-    ContentPack cp;
+    protected ContentPack cp;
 
     // Use this for initialization
     void Start () {
         image.texture = texture;
         cp = new ContentPack(prefab);
         switch (prefab.name) {
-            case ("Brit"):
-                OnClick();
-                break;
             case ("Urban Metro Vest"):
                 OnClick();
                 break;
@@ -41,9 +36,7 @@ public class CCItemScript : MonoBehaviour {
             case ("Urban Metro Shoes Right"):
                 OnClick();
                 break;
-            case ("MicahFemaleHair"):
-                OnClick();
-                break;
+
             case ("CiaoBella_Jacket"):
                 OnClick();
                 break;
@@ -62,7 +55,7 @@ public class CCItemScript : MonoBehaviour {
         }
 	}
 
-    public void OnClick() {
+    public virtual void OnClick() {
         Mark.enabled = !Mark.enabled;
 
         M3DCharacterManager character = SceneManager.currentSceneManager.GetComponent<CharacterCreationSystem>().character;
