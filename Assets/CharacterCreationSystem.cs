@@ -11,6 +11,8 @@ public class CharacterCreationSystem : MonoBehaviour {
     public GameObject[] prefabs;
     public ThreeDArray[] clothes;
     public RectTransform clothesDisplay;
+    public ThreeDArray[] hair;
+    public RectTransform hairDisplay;
     public GameObject CCItemPrefab;
 
     [HideInInspector]
@@ -38,6 +40,8 @@ public class CharacterCreationSystem : MonoBehaviour {
         character.ForceJawShut = true;
 
         displayClothes();
+
+        displayHair();
     }
 
     public void genderChanged() {
@@ -47,6 +51,10 @@ public class CharacterCreationSystem : MonoBehaviour {
         CharacterCreationSystemGUI.instance.Tabs[1].SetActive(true);
 
         displayClothes();
+
+        CharacterCreationSystemGUI.instance.Tabs[2].SetActive(true);
+
+        displayHair();
 
         M3DCharacterManager objChar = obj.GetComponent<M3DCharacterManager>();
 
@@ -67,6 +75,34 @@ public class CharacterCreationSystem : MonoBehaviour {
     {
         character.SetBlendshapeValueAsync("FBMBodybuilderDetails", fitnessSlider.value);
         character.SetBlendshapeValueAsync("FBMBodybuilderSize", fitnessSlider.value);
+    }
+
+    void displayHair()
+    {
+
+        if (hairDisplay.childCount > 0)
+        {
+
+            for (int i = 0; i < hairDisplay.childCount; i++)
+            {
+
+                Destroy(hairDisplay.GetChild(i).gameObject);
+
+            }
+
+        }
+
+        ThreeDArray tttd = hair[(int)gender];
+
+        foreach (TwoDArray ttd in tttd.Array)
+        {
+            Object[] hairs = ttd.Array;
+
+            CCItemScript itemScript = Instantiate(CCItemPrefab, hairDisplay).GetComponent<CCItemScript>();
+            itemScript.prefab = (GameObject)hairs[0];
+            itemScript.texture = (Texture2D)hairs[1];
+        }
+
     }
 
     void displayClothes() {

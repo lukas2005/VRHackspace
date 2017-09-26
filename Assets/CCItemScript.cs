@@ -23,6 +23,9 @@ public class CCItemScript : MonoBehaviour {
         image.texture = texture;
         cp = new ContentPack(prefab);
         switch (prefab.name) {
+            case ("Brit"):
+                OnClick();
+                break;
             case ("Urban Metro Vest"):
                 OnClick();
                 break;
@@ -36,6 +39,9 @@ public class CCItemScript : MonoBehaviour {
                 OnClick();
                 break;
             case ("Urban Metro Shoes Right"):
+                OnClick();
+                break;
+            case ("MicahFemaleHair"):
                 OnClick();
                 break;
             case ("CiaoBella_Jacket"):
