@@ -22,6 +22,13 @@ namespace lukas2005.VRHackspace
 
         #endregion
 
+        void Start()
+        {
+            if (type == SceneType.Spawn && !PhotonNetwork.connected) {
+                NetworkManager.Connect();
+            }
+        }
+
     }
 
     public enum SceneType { NoSpawn, Spawn }

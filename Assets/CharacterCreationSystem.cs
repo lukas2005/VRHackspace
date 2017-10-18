@@ -1,9 +1,8 @@
 ﻿using MORPH3D;
 using UnityEngine;
-using TMPro;
 using MORPH3D.FOUNDATIONS;
-using UnityEngine.UI;
-using System.Timers;
+using UnityEngine.SceneManagement;
+using UnityEditor.Animations;
 
 public class CharacterCreationSystem : MonoBehaviour {
 
@@ -22,9 +21,11 @@ public class CharacterCreationSystem : MonoBehaviour {
     [HideInInspector]
     public M3DCharacterManager character;
 
-    public TMP_Dropdown genderDropdown;
-    public Slider fatnessSlider;
-    public Slider fitnessSlider;
+    public GameObject ConfirmationPanel;
+
+    public Avatar mAva;
+    public Avatar fAva;
+    public AnimatorController aCont;
 
     #region Scene Singleton
 
@@ -42,15 +43,22 @@ public class CharacterCreationSystem : MonoBehaviour {
     void Start () {
         character = Instantiate(prefabs[(int)gender], Vector3.zero, new Quaternion(0, 180, 0, 0)).GetComponent<M3DCharacterManager>();
         character.ForceJawShut = true;
+        Animator anim = character.gameObject.AddComponent<Animator>();
+        anim.avatar = gender == Gender.Male ? mAva : fAva;
+        anim.runtimeAnimatorController = aCont;
 
         DisplayClothes();
 
         DisplayHair();
     }
 
-    public void GenderChanged() {
-        gender = (Gender)genderDropdown.value;
+    public void GenderChanged(int val) {
+        gender = (Gender)val;
+
         GameObject obj = Instantiate(prefabs[(int)gender], Vector3.zero, new Quaternion(0, 180, 0, 0));
+        Animator anim = character.gameObject.AddComponent<Animator>();
+        anim.avatar = gender == Gender.Male ? mAva : fAva;
+        anim.runtimeAnimatorController = aCont;
 
         CharacterCreationSystemGUI.instance.Tabs[1].SetActive(true);
 
@@ -70,15 +78,15 @@ public class CharacterCreationSystem : MonoBehaviour {
         character.ForceJawShut = true;
     }
 
-    public void FatnessChanged()
+    public void FatnessChanged(float val)
     {
-        character.SetBlendshapeValueAsync("FBMHeavy", fatnessSlider.value);
+        character.SetBlendshapeValue("FBMHeavy", val);
     }
 
-    public void FitnessChanged()
+    public void FitnessChanged(float val)
     {
-        character.SetBlendshapeValueAsync("FBMBodybuilderDetails", fitnessSlider.value);
-        character.SetBlendshapeValueAsync("FBMBodybuilderSize", fitnessSlider.value);
+        character.SetBlendshapeValue("FBMBodybuilderDetails", val);
+        character.SetBlendshapeValue("FBMBodybuilderSize", val);
     }
 
     void DisplayHair()
@@ -137,6 +145,20 @@ public class CharacterCreationSystem : MonoBehaviour {
             itemScript.texture = (Texture2D)wear[1];
         }
 
+    }
+
+    public void Confirmation(int step) {
+        switch (step) {
+            case (0):
+                ConfirmationPanel.SetActive(true);
+                break;
+            case (1):
+                ConfirmationPanel.SetActive(false);
+                break;
+            case (2):
+                SceneManager.LoadScene("Location1");
+                break;
+        }
     }
 
     T CopyComponent<T>(T original, GameObject destination) where T : Component

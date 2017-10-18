@@ -15,11 +15,16 @@ public class NetworkManager : MonoBehaviour {
 
     #endregion
 
-    SceneManager scenemngr;
-
     // Use this for initialization
     void Start() {
-        scenemngr = SceneManager.currentSceneManager;
+    }
+
+    private void OnGUI()
+    {
+        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+    }
+
+    public static void Connect() {
         PhotonNetwork.ConnectUsingSettings(GameManager.instance.Version);
     }
 
@@ -35,10 +40,11 @@ public class NetworkManager : MonoBehaviour {
     }
 
     void OnJoinedRoom() {
+        SpawnPlayer();
     }
 
-    public GameObject SpawnPlayer() {
-
+    public static GameObject SpawnPlayer() {
+        SceneManager scenemngr = SceneManager.currentSceneManager;
         if (scenemngr == null || scenemngr.type == SceneType.NoSpawn)
         {
             Debug.LogWarning("We are in a wrong scene!");

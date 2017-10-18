@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
     public void NewCharacter() {
 
         GameManager.instance.CreateNewCharacter = true;
-        PhotonNetwork.LoadLevel("CharacterCreation");
+        SceneManager.LoadScene("CharacterCreation");
 
     }
 
@@ -15,7 +14,7 @@ public class MainMenu : MonoBehaviour {
     {
 
         GameManager.instance.CreateNewCharacter = false;
-        PhotonNetwork.LoadLevel("CharacterCreation");
+        SceneManager.LoadScene("CharacterCreation");
 
     }
 
