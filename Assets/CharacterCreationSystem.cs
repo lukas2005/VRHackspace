@@ -55,8 +55,11 @@ public class CharacterCreationSystem : MonoBehaviour {
     public void GenderChanged(int val) {
         gender = (Gender)val;
 
-        GameObject obj = Instantiate(prefabs[(int)gender], Vector3.zero, new Quaternion(0, 180, 0, 0));
-        Animator anim = character.gameObject.AddComponent<Animator>();
+        GameObject obj = Instantiate(prefabs[val], Vector3.zero, new Quaternion(0, 180, 0, 0));
+        Animator anim = obj.AddComponent<Animator>();
+        Debug.Log(gender);
+        Debug.Log(mAva);
+        Debug.Log(fAva);
         anim.avatar = gender == Gender.Male ? mAva : fAva;
         anim.runtimeAnimatorController = aCont;
 
