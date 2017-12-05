@@ -25,7 +25,9 @@ namespace lukas2005.VRHackspace
 
         void Start()
         {
-            FindObjectOfType<ReflectionProbe>().RenderProbe();
+            ReflectionProbe probe = FindObjectOfType<ReflectionProbe>();
+            if (probe != null) probe.RenderProbe();
+
             if (type == SceneType.Spawn && !PhotonNetwork.connected) {
                 NetworkManager.Connect();
             }

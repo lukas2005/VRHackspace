@@ -14,7 +14,8 @@ public class CCItemScript : MonoBehaviour {
     public Image Mark;
     public RawImage image;
 
-    protected ContentPack cp;
+    [HideInInspector]
+    public ContentPack cp;
 
     // Use this for initialization
     void Start () {

@@ -1,6 +1,7 @@
 ﻿using MORPH3D;
 using UnityEngine;
 using MORPH3D.FOUNDATIONS;
+using MORPH3D.COSTUMING;
 
 public class CharacterCreationSystem : MonoBehaviour {
 
@@ -155,6 +156,32 @@ public class CharacterCreationSystem : MonoBehaviour {
                 ConfirmationPanel.SetActive(false);
                 break;
             case (2): // Yes
+                Character ch = ScriptableObject.CreateInstance<Character>();
+                ch.gender = gender;
+
+                foreach (CCItemScript itemScript in clothesDisplay.GetComponentsInChildren<CCItemScript>())
+                {
+                    if (itemScript.Mark.enabled) {
+                        ch.clothes.Add(new ContentPack(itemScript.prefab));
+                    }
+                }
+                foreach (CCHairScript itemScript in hairDisplay.GetComponentsInChildren<CCHairScript>())
+                {
+                    if (itemScript.Mark.enabled)
+                    {
+                        ch.clothes.Add(new ContentPack(itemScript.prefab));
+                    }
+                }
+                /*foreach (CIhair hair in character.GetAllHair())
+                {
+                    CIhair cl = Instantiate(hair);
+                    DontDestroyOnLoad(cl);
+                    ch.hair.Add(cl);
+                }*/
+
+                ch.blendshapes = character.GetActiveBlendShapes();
+
+                GameManager.instance.currentCharacter = ch;
                 GameManager.levelLoader.LoadLevel(2);
                 break;
         }

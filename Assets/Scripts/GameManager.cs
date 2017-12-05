@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour {
 
     public string Version = "1.0.0";
 
+    public Character currentCharacter;
+
     #region Singleton
 
     public static GameManager instance;
