@@ -726,8 +726,6 @@ GameObject:
   - component: {fileID: 1703339773}
   - component: {fileID: 1703339772}
   - component: {fileID: 1703339771}
-  - component: {fileID: 1703339776}
-  - component: {fileID: 1703339775}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -798,58 +796,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1703339775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1703339770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e46273fc06c47d94599f05044d604991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1703339776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1703339770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3517c759096a2343b3c190e16b3db62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  usePersistentDataPath: 1
-  saveGamePath: 
-  quickSaveName: QuickSave
-  debugController:
-    gameSaved: 1
-    gameLoaded: 1
-    loadPrefab: 0
-    oiIsSetToDontSave: 0
-    currentRefRec: 0
-    isPersistent: 0
-    destroyingGameObject: 0
-    packGameObject: 0
-    packComponent: 0
-    checkCompSaveMode: 0
-    notSavingComp: 0
-    getValuesType: 0
-    getValuesField: 0
-    checkPropertySelector: 0
-    fieldsLength: 0
-    writeFieldType: 0
-    writeSurrogateFound: 0
-    writeFieldInfo: 0
-    instantiate: 0
-    unpackComponent: 0
-    readFieldInfo: 0
-    addFieldToDict: 0
-    setValuesType: 0
-    setValuesField: 0
-    readFieldType: 0
-    readFromDict: 0
 --- !u!1 &1756808721
 GameObject:
   m_ObjectHideFlags: 0
