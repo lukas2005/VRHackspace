@@ -180,7 +180,7 @@ public class CharacterCreationSystem : MonoBehaviour {
     M3DCharacterManager CopyCharacterVars(M3DCharacterManager original, M3DCharacterManager destination)
     {
         foreach (Morph m in original.GetActiveBlendShapes()) {
-            destination.SetBlendshapeValueAsync(m.localName, m.value);
+            destination.SetBlendshapeValue(m.localName, m.value);
         }
         return destination;
     }
