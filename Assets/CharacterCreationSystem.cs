@@ -1,8 +1,6 @@
 ﻿using MORPH3D;
 using UnityEngine;
 using MORPH3D.FOUNDATIONS;
-using UnityEngine.SceneManagement;
-using UnityEditor.Animations;
 
 public class CharacterCreationSystem : MonoBehaviour {
 
@@ -25,7 +23,7 @@ public class CharacterCreationSystem : MonoBehaviour {
 
     public Avatar mAva;
     public Avatar fAva;
-    public AnimatorController aCont;
+    public RuntimeAnimatorController aCont;
 
     #region Scene Singleton
 
@@ -148,16 +146,16 @@ public class CharacterCreationSystem : MonoBehaviour {
 
     }
 
-    public void Confirmation(int step) {
-        switch (step) {
-            case (0):
+    public void Confirmation(int state) {
+        switch (state) {
+            case (0): // Open the panel
                 ConfirmationPanel.SetActive(true);
                 break;
-            case (1):
+            case (1): // No
                 ConfirmationPanel.SetActive(false);
                 break;
-            case (2):
-                SceneManager.LoadScene("Location1");
+            case (2): // Yes
+                GameManager.levelLoader.LoadLevel(2);
                 break;
         }
     }
