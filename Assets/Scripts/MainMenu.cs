@@ -1,21 +1,21 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    public void NewCharacter() {
-
-        GameManager.instance.CreateNewCharacter = true;
-        SceneManager.LoadScene("CharacterCreation");
-
-    }
+    public GameObject MainCanv;
+    public GameObject CharSelectCanv;
 
     public void SelectExisting()
     {
+        MainCanv.SetActive(false);
+        CharSelectCanv.SetActive(true);
+    }
 
-        GameManager.instance.CreateNewCharacter = false;
-        SceneManager.LoadScene("CharacterCreation");
 
+    public void BackToMain()
+    {
+        MainCanv.SetActive(true);
+        CharSelectCanv.SetActive(false);
     }
 
 }

@@ -9,6 +9,7 @@ namespace lukas2005.VRHackspace
 
         public Transform[] SpawnPoints;
         public SceneType type;
+        public Camera MainCamera;
 
         #region Scene Singleton
 
@@ -24,6 +25,7 @@ namespace lukas2005.VRHackspace
 
         void Start()
         {
+            FindObjectOfType<ReflectionProbe>().RenderProbe();
             if (type == SceneType.Spawn && !PhotonNetwork.connected) {
                 NetworkManager.Connect();
             }

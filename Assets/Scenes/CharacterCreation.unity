@@ -690,8 +690,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1508959026}
   m_HandleRect: {fileID: 1508959025}
   m_Direction: 0
-  m_Value: 0.25
-  m_Size: 0.9999998
+  m_Value: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 611993107}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1323,6 +1323,16 @@ Prefab:
     - target: {fileID: 1049478799665290, guid: c5cc469eeee86254c944600540dc450f, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075476339814524, guid: c5cc469eeee86254c944600540dc450f,
+        type: 2}
+      propertyPath: viewIdField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075476339814524, guid: c5cc469eeee86254c944600540dc450f,
+        type: 2}
+      propertyPath: instantiationId
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c5cc469eeee86254c944600540dc450f, type: 2}
@@ -3390,6 +3400,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114328126595277170, guid: 98a31805dbd561e488af5e864b279968,
+        type: 2}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114328126595277170, guid: 98a31805dbd561e488af5e864b279968,
+        type: 2}
+      propertyPath: instantiationId
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98a31805dbd561e488af5e864b279968, type: 2}
   m_IsPrefabParent: 0
@@ -4510,6 +4530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnPoints: []
   type: 0
+  MainCamera: {fileID: 0}
 --- !u!4 &1418481317
 Transform:
   m_ObjectHideFlags: 0
@@ -5497,8 +5518,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1056652072}
   m_HandleRect: {fileID: 1056652071}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

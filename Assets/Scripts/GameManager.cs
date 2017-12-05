@@ -6,16 +6,14 @@ public class GameManager : MonoBehaviour {
 
     public string Version = "1.0.0";
 
-    [HideInInspector]
-    public bool CreateNewCharacter;
-
-
     #region Singleton
 
     public static GameManager instance;
+    public static LevelLoader levelLoader;
 
     void Awake() {
         instance = this;
+        levelLoader = GetComponent<LevelLoader>();
         DontDestroyOnLoad(this);
     }
 
