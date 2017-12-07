@@ -4,6 +4,8 @@ public class CameraScript : MonoBehaviour {
 
     public Camera cam;
 
+    public Transform parentTo;
+
     public float NearestClippingBase = 0.11f;
 
     private float NearestClippingScaled = 0.11f;
@@ -12,6 +14,8 @@ public class CameraScript : MonoBehaviour {
         NearestClippingScaled = transform.parent.localScale.y * NearestClippingBase;
 
         cam.nearClipPlane = NearestClippingScaled;
+
+        transform.parent = parentTo;
     }
 
 }
