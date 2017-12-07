@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAppearance : MonoBehaviour {
+public class PlayerAppearance : Photon.MonoBehaviour {
 
     public Character ch;
 
@@ -38,6 +38,35 @@ public class PlayerAppearance : MonoBehaviour {
 
     public void UpdateAppearance() {
         update = true;
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
+        if (stream.isWriting)
+        {
+            stream.SendNext(update);
+            if (update) {
+                stream.SendNext(ch.gender);
+                stream.SendNext(ch.clothes.ToArray().Length);
+                foreach (ContentPack cp in ch.clothes) {
+                    // Here send
+                }
+                stream.SendNext(ch.blendshapes);
+            }
+        }
+        else
+        {
+            update = (bool)stream.ReceiveNext();
+            if (ch == null) ch = ScriptableObject.CreateInstance<Character>();
+            if (update) {
+                ch.gender = (Gender)stream.ReceiveNext();
+                ch.clothes = new List<ContentPack>((int)stream.ReceiveNext());
+                foreach (ContentPack cp in ch.clothes)
+                {
+                    // Here receive
+                }
+                ch.blendshapes = (Morph[])stream.ReceiveNext();
+            }
+        }
     }
 
 }
