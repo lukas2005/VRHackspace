@@ -44,7 +44,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1273445261287694
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,8 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c83e06d07b8f654981913996327bdf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoConnect: 1
-  AutoDisconnect: 1
+  AutoConnect: 0
+  AutoDisconnect: 0
   AutoTransmit: 1
   SamplingRate: 48000
   FrameDuration: 20000
@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 0.0.1
+  currentCharacter: {fileID: 0}
 --- !u!114 &114797825848275182
 MonoBehaviour:
   m_ObjectHideFlags: 1
