@@ -1,4 +1,4 @@
-﻿using MORPH3D;
+using MORPH3D;
 using MORPH3D.COSTUMING;
 using MORPH3D.FOUNDATIONS;
 using System.Collections;
@@ -79,6 +79,12 @@ public class PlayerAppearance : Photon.MonoBehaviour {
             }
             update = updateTmp;
         }
+    }
+
+    [PunRPC]
+    void SpawnClothesOnNetwork(int type, Gender gender, int id, int variation)
+    {
+        Instantiate(gameObject, Vector3.zero, Quaternion.identity);
     }
 
 }

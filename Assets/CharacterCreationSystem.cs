@@ -8,10 +8,8 @@ public class CharacterCreationSystem : MonoBehaviour {
     public Gender gender;
     public GameObject[] prefabs;
 
-    public ThreeDArray[] clothes;
     public RectTransform clothesDisplay;
 
-    public ThreeDArray[] hair;
     public RectTransform hairDisplay;
 
     public GameObject CCItemPrefab;
@@ -104,7 +102,7 @@ public class CharacterCreationSystem : MonoBehaviour {
 
         }
 
-        ThreeDArray tttd = hair[(int)gender];
+        ThreeDArray tttd = GameManager.data.hair[(int)gender];
 
         foreach (TwoDArray ttd in tttd.Array)
         {
@@ -135,7 +133,7 @@ public class CharacterCreationSystem : MonoBehaviour {
 
         }
 
-        ThreeDArray tttd = clothes[(int)gender];
+        ThreeDArray tttd = GameManager.data.clothes[(int)gender];
 
         foreach (TwoDArray ttd in tttd.Array) {
             Object[] wear = ttd.Array;

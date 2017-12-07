@@ -12,10 +12,12 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
     public static LevelLoader levelLoader;
+    public static DataHolder data;
 
     void Awake() {
         instance = this;
         levelLoader = GetComponent<LevelLoader>();
+        data = GetComponent<DataHolder>();
         DontDestroyOnLoad(this);
     }
 
