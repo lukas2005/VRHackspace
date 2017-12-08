@@ -43,7 +43,7 @@ public class PlayerContoller : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        vel.y += Physics.gravity.y * 2 * Time.deltaTime;
+        vel += Physics.gravity * 2 * Time.deltaTime;
         if (!anim.applyRootMotion) {
             cc.Move(vel * Time.deltaTime);
         }

@@ -567,7 +567,7 @@ VideoPlayer:
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 23464377755888676}
-  m_TargetMaterialProperty: _MainTex
+  m_TargetMaterialProperty: _BumpMap
   m_RenderMode: 3
   m_AspectRatio: 0
   m_DataSource: 1
@@ -577,7 +577,7 @@ VideoPlayer:
   - {fileID: 82307902351578212}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://192-168-0-101.bc1f53bd88124434ba4654b513d372d4.plex.direct:32400/library/parts/18995/1487379984/file.mp4?X-Plex-Session-Identifier=rhnkp68tz9sia2352gc08s2r&X-Plex-Product=Plex%20Web&X-Plex-Version=3.20.5&X-Plex-Client-Identifier=zf2ootkaf6j0sfknh9ul58ck&X-Plex-Platform=Chrome&X-Plex-Platform-Version=60.0&X-Plex-Device=Windows&X-Plex-Device-Name=Plex%20Web%20%28Chrome%29&X-Plex-Device-Screen-Resolution=1440x770%2C1440x900&X-Plex-Token=SbWE7GetEzeg8KDYp9Fk&Accept-Language=pl
+  m_Url: http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_10mb.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
