@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour {
     public string Version = "1.0.0";
 
     public Character currentCharacter;
+    public GameObject debugScreen;
+
+    public bool Debug = false;
 
     #region Singleton
 
@@ -30,6 +33,10 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetButtonDown("Debug"))
+        {
+            Debug = !Debug;
+            debugScreen.SetActive(Debug);
+        }
 	}
 }
