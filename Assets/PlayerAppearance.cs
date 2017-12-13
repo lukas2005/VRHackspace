@@ -99,15 +99,8 @@ public class PlayerAppearance : Photon.MonoBehaviour {
         int id = int.Parse(outputArray[1]);
         int variation = int.Parse(outputArray[2]);
 
-        Debug.Log("SpawnClothesOnNetwork");
-        if (type == 1)
-        {
-            Debug.Log(gender);
-            Debug.Log(id);
-            Debug.Log(GameManager.data.hair[(int)gender].Array[id]);
-        }
         GameObject obj = Instantiate(type == 0 ? GameManager.data.clothes[(int)gender].Array[id].Array[0] : GameManager.data.hair[(int)gender].Array[id].Array[0], Vector3.zero, Quaternion.identity) as GameObject;
-        if (type == 1) {
+        if (type == 1 && variation != 0) {
             SkinnedMeshRenderer[] smrs = obj.GetComponentsInChildren<SkinnedMeshRenderer>();
             foreach (SkinnedMeshRenderer smr in smrs)
             {
