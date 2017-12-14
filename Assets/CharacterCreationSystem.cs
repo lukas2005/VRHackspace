@@ -17,6 +17,7 @@ public class CharacterCreationSystem : MonoBehaviour {
 
     [HideInInspector]
     public M3DCharacterManager character;
+    Transform charTran;
 
     public GameObject ConfirmationPanel;
 
@@ -38,15 +39,21 @@ public class CharacterCreationSystem : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        character = Instantiate(prefabs[(int)gender], Vector3.zero, new Quaternion(0, 180, 0, 0)).GetComponent<M3DCharacterManager>();
+        character = Instantiate(prefabs[(int)gender], Vector3.zero, new Quaternion(0, 0, 0, 0)).GetComponent<M3DCharacterManager>();
         character.ForceJawShut = true;
         Animator anim = character.gameObject.AddComponent<Animator>();
         anim.avatar = gender == Gender.Male ? mAva : fAva;
         anim.runtimeAnimatorController = aCont;
+        charTran = character.gameObject.transform;
 
         DisplayClothes();
 
         DisplayHair();
+    }
+
+    public void RotateCharacter(float angle)
+    {
+        charTran.eulerAngles = new Vector3(charTran.eulerAngles.x, angle, charTran.eulerAngles.z);
     }
 
     public void GenderChanged(int val) {

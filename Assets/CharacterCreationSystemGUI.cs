@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterCreationSystemGUI : MonoBehaviour
 {
 
     public GameObject[] Tabs;
+    public GameObject TabsButtonsParent;
 
     #region Scene Singleton
 
@@ -17,9 +19,16 @@ public class CharacterCreationSystemGUI : MonoBehaviour
 
     #endregion
 
+    private void Start()
+    {
+        GridLayoutGroup lg = TabsButtonsParent.GetComponent<GridLayoutGroup>();
+        float widthPerElement = TabsButtonsParent.GetComponent<RectTransform>().rect.width/Tabs.Length;
+        lg.cellSize = new Vector2(widthPerElement, lg.cellSize.y);
+    }
+
     public void TabChange(int index) {
         int i = 0;
-        foreach (GameObject g in instance.Tabs) {
+        foreach (GameObject g in Tabs) {
             if (i == index)
             {
                 g.SetActive(true);
