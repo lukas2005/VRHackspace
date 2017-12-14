@@ -76,15 +76,16 @@ public class CharacterCreationSystem : MonoBehaviour {
         character.ForceJawShut = true;
     }
 
-    public void FatnessChanged(float val)
+    public void BodyChanged(float val, string[] blendshapes)
     {
-        character.SetBlendshapeValue("FBMHeavy", val);
+        foreach (string s in blendshapes) {
+            character.SetBlendshapeValue(s, val);
+        }
     }
 
-    public void FitnessChanged(float val)
+    public void BodyChanged(float val, string blendshape)
     {
-        character.SetBlendshapeValue("FBMBodybuilderDetails", val);
-        character.SetBlendshapeValue("FBMBodybuilderSize", val);
+        character.SetBlendshapeValue(blendshape, val);
     }
 
     void DisplayHair()
