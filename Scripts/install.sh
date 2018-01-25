@@ -5,6 +5,9 @@
 # This link changes from time to time. I haven't found a reliable hosted installer package for doing regular
 # installs like this. You will probably need to grab a current link from: http://unity3d.com/get-unity/download/archive
 
+echo "$(pwd)"
+echo "$(ls)"
+
 cat=$(cat ../ProjectSettings/ProjectVersion.txt)
 version=${cat:17:1000}
 echo $version
