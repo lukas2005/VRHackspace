@@ -8,9 +8,7 @@ project="VRHackspace"
 unity_bin="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
 #unity_bin="/c/Program Files/Unity/Hub/Editor/2017.3.0f3/Editor/Unity.exe"
 
-echo $unity_bin
-
-rm "$(pwd)/unity.log" -f
+rm -f "$(pwd)/unity.log"
 
 echo "Attempting to build $project for Windows"
 "$unity_bin" \
@@ -29,7 +27,7 @@ echo "Attempting to build $project for OS X"
   -silent-crashes \
   -logFile "$(pwd)/unity.log" \
   -projectPath "$(pwd)" \
-  -buildOSXUniversalPlayer "$(pwd)/Build/OSX/$project.app" \
+  -buildOSXUniversalPlayer "$(pwd)/Build/Mac/$project.app" \
   -quit
 
 echo "Attempting to build $project for Linux"
@@ -41,6 +39,11 @@ echo "Attempting to build $project for Linux"
   -projectPath "$(pwd)" \
   -buildLinuxUniversalPlayer "$(pwd)/Build/Linux/$project.exe" \
   -quit
+  
+echo 'Attempting to zip builds'
+zip -r "$(pwd)/Build/Linux.zip" "$(pwd)/Build/Linux/"
+zip -r "$(pwd)/Build/Mac.zip" "$(pwd)/Build/Mac/"
+zip -r "$(pwd)/Build/Windows.zip" "$(pwd)/Build/Windows/"
   
 echo 'Logs from build'
 cat "$(pwd)/unity.log"
