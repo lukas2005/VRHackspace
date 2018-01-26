@@ -5,26 +5,42 @@
 # Change this the name of your project. This will be the name of the final executables as well.
 project="VRHackspace"
 
+unity_bin="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
+#unity_bin="/c/Program Files/Unity/Hub/Editor/2017.3.0f3/Editor/Unity.exe"
+
+echo $unity_bin
+
+rm "$(pwd)/unity.log" -f
+
 echo "Attempting to build $project for Windows"
-/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+"$unity_bin" \
   -batchmode \
   -nographics \
-  -projectPath $(pwd) \
-  -buildWindowsPlayer "$(pwd)/Build/windows/$project.exe" \
+  -silent-crashes \
+  -logFile "$(pwd)/unity.log" \
+  -projectPath "$(pwd)" \
+  -buildWindowsPlayer "$(pwd)/Build/Windows/$project.exe" \
   -quit
 
 echo "Attempting to build $project for OS X"
-/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+"$unity_bin" \
   -batchmode \
   -nographics \
-  -projectPath $(pwd) \
-  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+  -silent-crashes \
+  -logFile "$(pwd)/unity.log" \
+  -projectPath "$(pwd)" \
+  -buildOSXUniversalPlayer "$(pwd)/Build/OSX/$project.app" \
   -quit
 
 echo "Attempting to build $project for Linux"
-/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+"$unity_bin" \
   -batchmode \
   -nographics \
-  -projectPath $(pwd) \
-  -buildLinuxUniversalPlayer "$(pwd)/Build/linux/$project.exe" \
+  -silent-crashes \
+  -logFile "$(pwd)/unity.log" \
+  -projectPath "$(pwd)" \
+  -buildLinuxUniversalPlayer "$(pwd)/Build/Linux/$project.exe" \
   -quit
+  
+echo 'Logs from build'
+cat "$(pwd)/unity.log"
