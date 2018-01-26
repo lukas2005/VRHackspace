@@ -2,6 +2,8 @@
 
 language: objective-c
 osx_image: xcode61
+git:
+  depth: 1
 install:
 - ./Scripts/install.sh
 script:
