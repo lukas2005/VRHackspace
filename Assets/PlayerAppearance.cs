@@ -1,6 +1,7 @@
 ﻿using MORPH3D;
 using MORPH3D.COSTUMING;
 using MORPH3D.FOUNDATIONS;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAppearance : Photon.MonoBehaviour {
@@ -29,15 +30,11 @@ public class PlayerAppearance : Photon.MonoBehaviour {
                 {
                     foreach (CIclothing clothing in cp.availableClothing)
                     {
-                        string name = clothing.gameObject.name;
-
-                        photonView.RPC("SpawnClothesOnNetwork", PhotonTargets.OthersBuffered, 0, name);
+                        photonView.RPC("SpawnClothesOnNetwork", PhotonTargets.OthersBuffered, 0, Utils.ClothIntoClothId(clothing));
                     }
                     foreach (CIhair hair in cp.availableHair)
                     {
-                        string name = hair.gameObject.name + ":" + hair.GetComponentInChildren<SkinnedMeshRenderer>().sharedMaterial.name;
-
-                        photonView.RPC("SpawnClothesOnNetwork", PhotonTargets.OthersBuffered, 1, name);
+                        photonView.RPC("SpawnClothesOnNetwork", PhotonTargets.OthersBuffered, 1, Utils.ClothIntoClothId(hair));
                     }
                 }
             }
@@ -61,7 +58,7 @@ public class PlayerAppearance : Photon.MonoBehaviour {
             if (update) {
                 stream.SendNext(ch.gender);
 
-                stream.SendNext(ch.blendshapes.Length);
+                stream.SendNext(ch.blendshapes.Count);
                 foreach (Morph m in ch.blendshapes)
                 {
                     stream.SendNext(m.localName);
@@ -75,8 +72,8 @@ public class PlayerAppearance : Photon.MonoBehaviour {
             if (ch == null) ch = ScriptableObject.CreateInstance<Character>();
             if (updateTmp) {
                 ch.gender = (Gender)stream.ReceiveNext();
-                ch.blendshapes = new Morph[(int)stream.ReceiveNext()];
-                for (int i = 0; i < ch.blendshapes.Length; i++)
+                ch.blendshapes = new List<Morph>((int)stream.ReceiveNext());
+                for (int i = 0; i < ch.blendshapes.Count; i++)
                 {
                     ch.blendshapes[i] = new Morph();
                     ch.blendshapes[i].localName = (string)stream.ReceiveNext();
@@ -101,11 +98,7 @@ public class PlayerAppearance : Photon.MonoBehaviour {
 
         GameObject obj = Instantiate(type == 0 ? GameManager.data.clothes[(int)gender].Array[id].Array[0] : GameManager.data.hair[(int)gender].Array[id].Array[0], Vector3.zero, Quaternion.identity) as GameObject;
         if (type == 1 && variation != 0) {
-            SkinnedMeshRenderer[] smrs = obj.GetComponentsInChildren<SkinnedMeshRenderer>();
-            foreach (SkinnedMeshRenderer smr in smrs)
-            {
-                smr.material = (Material)GameManager.data.hair[(int)gender].Array[id].Array[variation+2];
-            }
+            Utils.ColorHairBycId(obj, (Gender)gender, id, variation);
         }
         obj.transform.parent = gameObject.transform;
         gameObject.GetComponentInChildren<M3DCharacterManager>().AddContentPack(new ContentPack(obj));

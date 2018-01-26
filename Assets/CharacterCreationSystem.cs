@@ -1,7 +1,8 @@
 ﻿using MORPH3D;
 using UnityEngine;
 using MORPH3D.FOUNDATIONS;
-using MORPH3D.COSTUMING;
+using TMPro;
+using System.Collections.Generic;
 
 public class CharacterCreationSystem : MonoBehaviour {
 
@@ -24,6 +25,8 @@ public class CharacterCreationSystem : MonoBehaviour {
     public Avatar mAva;
     public Avatar fAva;
     public RuntimeAnimatorController aCont;
+
+    public TMP_InputField nameInput;
 
     #region Scene Singleton
 
@@ -157,11 +160,17 @@ public class CharacterCreationSystem : MonoBehaviour {
         switch (state) {
             case (0): // Open the panel
                 ConfirmationPanel.SetActive(true);
+                ConfirmationPanel.transform.Find("Panel").gameObject.SetActive(true);
+                //ConfirmationPanel.transform.Find("Name").gameObject.SetActive(false);
                 break;
             case (1): // No
                 ConfirmationPanel.SetActive(false);
                 break;
-            case (2): // Yes
+           /* case (2): // Yes
+                ConfirmationPanel.transform.Find("Panel").gameObject.SetActive(false);
+                //ConfirmationPanel.transform.Find("Name").gameObject.SetActive(true);
+                break;
+            */case (2): // Finish
                 Character ch = ScriptableObject.CreateInstance<Character>();
                 ch.gender = gender;
 
@@ -178,14 +187,12 @@ public class CharacterCreationSystem : MonoBehaviour {
                         ch.clothes.Add(new ContentPack(itemScript.prefab));
                     }
                 }
-                /*foreach (CIhair hair in character.GetAllHair())
-                {
-                    CIhair cl = Instantiate(hair);
-                    DontDestroyOnLoad(cl);
-                    ch.hair.Add(cl);
-                }*/
 
-                ch.blendshapes = character.GetActiveBlendShapes();
+                ch.blendshapes = new List<Morph>(character.GetActiveBlendShapes());
+                ch.name = nameInput.text;
+                //ch.charName = nameInput.text;
+
+                Debug.Log(ch.ToJson());
 
                 GameManager.instance.currentCharacter = ch;
                 GameManager.levelLoader.LoadLevel(2);
