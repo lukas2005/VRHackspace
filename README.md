@@ -1,9 +1,10 @@
 
 # #VRHackspace
 #VRHackspace Place in VR where hackers and tinkerers can meet! Anyone can contribute!
+We have a Discord server! Link: http://dicord.gg/ZJmmNFf
 # Credits
 This project was made thanks to [N-O-D-E](https://www.youtube.com/channel/UCvrLvII5oxSWEMEkszrxXEA) from youtube.
-And specifically this video: [![N-O-D-E VrHackspace Video](https://img.youtube.com/vi/QjIHqJ2TKM0/0.jpg)](https://www.youtube.com/watch?v=QjIHqJ2TKM0)
+And specifically this video: [![N-O-D-E VRHackspace Video](https://img.youtube.com/vi/QjIHqJ2TKM0/0.jpg)](https://www.youtube.com/watch?v=QjIHqJ2TKM0)
 # Assets i use (only those that are not in Unity Store are listed here)
 1. General textures from http://devassets.com/assets/general-textures/
 # How to help
