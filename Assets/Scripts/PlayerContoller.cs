@@ -12,8 +12,43 @@ public class PlayerContoller : MonoBehaviour {
     Vector3 vel;
     public float jumpSpeed = 20f;
 
+    public float mouseSensitivity = 3.0f;
+    public float mouseUpDown = 0.0f;
+    public float mouseYUpRange = 90.0f;
+    public float mouseYDownRange = 78.29992f;
+
+    public Camera cam;
+
     // Update is called once per frame
     void Update () {
+        Mouse();
+        Keyboard();
+    }
+
+    void FixedUpdate() {
+        vel += Physics.gravity * 2 * Time.deltaTime;
+        if (!anim.applyRootMotion) {
+            cc.Move(vel * Time.deltaTime);
+        }
+    }
+
+    private void Mouse()
+    {
+        float mouseLeftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
+        transform.Rotate(0, mouseLeftRight, 0);
+        mouseUpDown -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+
+        mouseUpDown = Mathf.Clamp(mouseUpDown, -mouseYUpRange, mouseYDownRange);
+        cam.transform.localRotation = Quaternion.Euler(mouseUpDown, 0, 0);
+
+        if (Input.GetKeyDown("escape"))
+            Cursor.lockState = CursorLockMode.None;
+        if (Input.GetMouseButtonDown(0))
+            Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Keyboard()
+    {
         float vmove = Input.GetAxis("Vertical") * 1.5f;
         float hmove = Input.GetAxis("Horizontal") * 1.5f;
         anim.SetFloat(vSpeedHash, vmove);
@@ -36,16 +71,7 @@ public class PlayerContoller : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            anim.SetFloat(vSpeedHash, vmove*10);
-        }
-
-        
-    }
-
-    void FixedUpdate() {
-        vel += Physics.gravity * 2 * Time.deltaTime;
-        if (!anim.applyRootMotion) {
-            cc.Move(vel * Time.deltaTime);
+            anim.SetFloat(vSpeedHash, vmove * 10);
         }
     }
 }

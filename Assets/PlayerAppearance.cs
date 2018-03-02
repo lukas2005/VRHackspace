@@ -13,7 +13,7 @@ public class PlayerAppearance : Photon.MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		character = GetComponentInChildren<M3DCharacterManager>();
+        character = GetComponentInChildren<M3DCharacterManager>();
     }
 	
 	// Update is called once per frame

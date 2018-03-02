@@ -60,14 +60,12 @@ public class NetworkManager : MonoBehaviour {
         myPlayer.GetComponent<PlayerAppearance>().ch = cCh;
 
         myPlayer.GetComponent<PlayerContoller>().enabled = true;
-        myPlayer.GetComponent<MyMouseLook>().enabled = true;
 
         if (scenemngr.MainCamera != null) scenemngr.MainCamera.gameObject.SetActive(false);
 
         GameObject camera = myPlayer.transform.Find("Camera").gameObject;
         camera.SetActive(true);
         camera.GetComponent<CameraScript>().UpdateClipping();
-        camera.transform.localPosition = new Vector3(.033f, 0,0);
 
 
         myPlayer.GetComponent<PhotonVoiceSpeaker>().enabled = false;
