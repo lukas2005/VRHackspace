@@ -8,6 +8,7 @@ This project was made thanks to [N-O-D-E](https://www.youtube.com/channel/UCvrLv
 And specifically this video: [![N-O-D-E VRHackspace Video](https://img.youtube.com/vi/QjIHqJ2TKM0/0.jpg)](https://www.youtube.com/watch?v=QjIHqJ2TKM0)
 # Assets i use (only those that are not in Unity Store are listed here)
 1. General textures from http://devassets.com/assets/general-textures/
+2. uDesktopDuplication from https://github.com/hecomi/uDesktopDuplication
 # How to help
 There are two ways of helping :)
 ## 1. Make a donation
