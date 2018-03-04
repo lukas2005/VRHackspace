@@ -1,7 +1,8 @@
-
 # #VRHackspace
 #VRHackspace Place in VR where hackers and tinkerers can meet! Anyone can contribute!
 We have a Discord server! Link: http://dicord.gg/ZJmmNFf
+# Note
+This repo is using [Git LFS](https://git-lfs.github.com/) to be able to contribute you must have set it up on your machine too!
 # Credits
 This project was made thanks to [N-O-D-E](https://www.youtube.com/channel/UCvrLvII5oxSWEMEkszrxXEA) from youtube.
 And specifically this video: [![N-O-D-E VRHackspace Video](https://img.youtube.com/vi/QjIHqJ2TKM0/0.jpg)](https://www.youtube.com/watch?v=QjIHqJ2TKM0)
