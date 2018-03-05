@@ -17,12 +17,23 @@ public class PlayerContoller : MonoBehaviour {
     public float mouseYUpRange = 90.0f;
     public float mouseYDownRange = 78.29992f;
 
+    private CursorLockMode lckMdNxtFrm = CursorLockMode.None;
+
+    public bool locked = false;
+
     public Camera cam;
 
     // Update is called once per frame
     void Update () {
-        Mouse();
-        Keyboard();
+        if (!locked)
+        {
+            Mouse();
+            Keyboard();
+        }
+        else {
+            anim.SetFloat(vSpeedHash, 0);
+            anim.SetFloat(hSpeedHash, 0);
+        }
     }
 
     void FixedUpdate() {
@@ -41,10 +52,11 @@ public class PlayerContoller : MonoBehaviour {
         mouseUpDown = Mathf.Clamp(mouseUpDown, -mouseYUpRange, mouseYDownRange);
         cam.transform.localRotation = Quaternion.Euler(mouseUpDown, 0, 0);
 
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetButtonDown("Cancel"))
             Cursor.lockState = CursorLockMode.None;
         if (Input.GetMouseButtonDown(0))
             Cursor.lockState = CursorLockMode.Locked;
+ 
     }
 
     private void Keyboard()
@@ -72,6 +84,29 @@ public class PlayerContoller : MonoBehaviour {
         if (Input.GetKey(KeyCode.LeftShift))
         {
             anim.SetFloat(vSpeedHash, vmove * 10);
+        }
+    }
+
+    public void SetInteractionStatus(bool interact, Transform newCamFollow) {
+        if (interact)
+        {
+            locked = true;
+            Cursor.lockState = CursorLockMode.None;
+            CameraScript script = cam.GetComponent<CameraScript>();
+            script.follow = newCamFollow;
+            script.offset = Vector3.zero;
+            script.changeRotation = true;
+            cam.transform.localPosition = Vector3.zero;
+        }
+        else {
+            CameraScript script = cam.GetComponent<CameraScript>();
+            script.follow = script.originalFollow;
+            script.offset = CameraScript.headOffset;
+            script.changeRotation = false;
+            cam.transform.localPosition = Vector3.zero;
+            cam.transform.localRotation = Quaternion.identity;
+            locked = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }

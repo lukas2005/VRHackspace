@@ -20,14 +20,14 @@ public class DataHolder : MonoBehaviour {
             for (int index = 0; index < hair[gender].Array.Length; index++) {
                 if (hair[gender].Array[index].Array.Length == 2)
                 {
-                    Debug.Log(gender + ":" + index + ":0:" + hair[gender].Array[index].Array[0].name);
+                   //Debug.Log(gender + ":" + index + ":0:" + hair[gender].Array[index].Array[0].name);
                     clothesReverseLookup.Add(hair[gender].Array[index].Array[0].name + ":" + ((GameObject)hair[gender].Array[index].Array[0]).GetComponentInChildren<SkinnedMeshRenderer>().sharedMaterial.name, gender + ":" + index + ":0");
                 }
                 else
                 {
                     for (int variation = 2; variation < hair[gender].Array[index].Array.Length; variation++)
                     {
-                        Debug.Log(gender + ":" + index + ":" + (variation - 2) + ":" + hair[gender].Array[index].Array[0].name + ":" + hair[gender].Array[index].Array[variation].name);
+                        //Debug.Log(gender + ":" + index + ":" + (variation - 2) + ":" + hair[gender].Array[index].Array[0].name + ":" + hair[gender].Array[index].Array[variation].name);
                         //clothesLookup.Add(gender+""+index, clothes[gender].Array[index].Array[0]);
                         clothesReverseLookup.Add(hair[gender].Array[index].Array[0].name + ":" + hair[gender].Array[index].Array[variation].name, gender + ":" + index + ":" + (variation - 2));
                     }

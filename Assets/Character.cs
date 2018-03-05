@@ -7,6 +7,7 @@ using UnityEngine;
 using SimpleJSON;
 
 [Serializable]
+[CreateAssetMenu]
 public class Character : ScriptableObject {
 
     public Gender gender;
@@ -59,9 +60,6 @@ public class Character : ScriptableObject {
         {
             ch.blendshapes.Add(new Morph(n["name"], n["value"].AsFloat, true, true));
         }
-        Debug.Log(ch);
-        Debug.Log(ch.blendshapes.Count);
-        Debug.Log(ch.clothes.Count);
         return ch;
     }
 

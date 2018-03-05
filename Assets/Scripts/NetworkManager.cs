@@ -44,6 +44,10 @@ public class NetworkManager : MonoBehaviour {
     }
 
     public static GameObject SpawnPlayer() {
+        if (GameManager.instance.currentCharacter == null) {
+            GameManager.instance.currentCharacter = Character.FromJson("{\"gender\":0,\"clothes\":[{\"id\":\"Urban Metro Vest\",\"type\":0},{\"id\":\"Urban Metro T-Shirt\",\"type\":0},{\"id\":\"Urban Metro Shoes Right\",\"type\":0},{\"id\":\"Urban Metro Shoes Left\",\"type\":0},{\"id\":\"Urban Metro Pants\",\"type\":0},{\"id\":\"Brit:BritHairBlack\",\"type\":1}],\"blendshapes\":[]}");
+        }
+
         SceneManager scenemngr = SceneManager.currentSceneManager;
         if (scenemngr == null || scenemngr.type == SceneType.NoSpawn)
         {

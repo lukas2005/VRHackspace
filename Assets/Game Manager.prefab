@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 0.0.1
-  currentCharacter: {fileID: 0}
+  currentCharacter: {fileID: 11400000, guid: 3869c26384d194e48b4e6df7cce6ff5d, type: 2}
   debugScreen: {fileID: 1579641972432158}
   Debug: 0
 --- !u!114 &114797825848275182

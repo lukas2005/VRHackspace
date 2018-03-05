@@ -194,7 +194,7 @@ public class CharacterCreationSystem : MonoBehaviour {
 
                 Debug.Log(ch.ToJson());
 
-                GameManager.instance.currentCharacter = Character.FromJson(ch.ToJson());
+                GameManager.instance.currentCharacter = ch;
                 GameManager.levelLoader.LoadLevel(2);
                 break;
         }

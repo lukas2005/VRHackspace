@@ -25,7 +25,6 @@ public class PlayerAppearance : Photon.MonoBehaviour {
             foreach (ContentPack cp in ch.clothes)
             {
                 character.AddContentPack(cp);
-                character.AddContentPackToModel(cp);
                 if (photonView.isMine)
                 {
                     foreach (CIclothing clothing in cp.availableClothing)
