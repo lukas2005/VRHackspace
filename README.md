@@ -6,6 +6,7 @@ This repo is using [Git LFS](https://git-lfs.github.com/) to be able to contribu
 # Credits
 This project was made thanks to [N-O-D-E](https://www.youtube.com/channel/UCvrLvII5oxSWEMEkszrxXEA) from youtube.
 And specifically this video: [![N-O-D-E VRHackspace Video](https://img.youtube.com/vi/QjIHqJ2TKM0/0.jpg)](https://www.youtube.com/watch?v=QjIHqJ2TKM0)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flukas2005%2FVRHackspace.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flukas2005%2FVRHackspace?ref=badge_shield)
 # Assets i use (only those that are not in Unity Store are listed here)
 1. General textures from http://devassets.com/assets/general-textures/
 # How to help
@@ -15,3 +16,7 @@ This is a simplest way of helping currently you can send me some bitcoins to add
 Later i will add other ways of donating
 ## 2. Directly contribute by coding designing and making pull requests
 Yes just directly start creating stuff you can submit single scenes, scripts, prefabs, textures, models, meshes, make fixes in old ones, make existing scenes bigger and better just remember to keep old stuff working :)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flukas2005%2FVRHackspace.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flukas2005%2FVRHackspace?ref=badge_large)
